@@ -5,7 +5,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-
+import sys
+sys.path.append("..")
 from segment_anything import sam_model_registry
 from segment_anything.utils.onnx import SamOnnxModel
 
