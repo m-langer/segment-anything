@@ -257,7 +257,7 @@ class SamPredictor:
 
     @property
     def device(self) -> torch.device:
-        return self.model.device
+        return torch.device("mps")
 
     def reset_image(self) -> None:
         """Resets the currently set image."""
